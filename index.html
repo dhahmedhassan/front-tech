@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwiz Crew Portal - Home</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+  <!-- Header  -->
+  <header class="header header--fixed-top">
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="#"><img src="img/logo.png" alt="Taiwiz Logo"></a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">FAQ</a></li>
+        </li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+  </header>
+  
+  <!-- /.Header  -->
+
+        <main class="main">
+
+            <!--Hero Wrapper-->
+            <section class="hero">
+                <div class="hero__bg">
+                </div>
+                <div class="hero__title">
+                    <span class="hero__title--underlined">Taiwiz</span> Crew Protal
+                </div>
+                <div class="hero__subtitle">
+                    Welcome to Taiwiz's Portal for Event specialists!
+                </div>
+                <div class="hero__cta">
+                    <div class="hero__cta_item">
+                        I'm an Individual <br />
+                        Enterpreneur
+                        <a href="#" class="hero__cta_button">Join as a Person</a>
+                    </div>
+
+                    <div class="hero__cta_item">
+                        I'm an Event Provider / <br />
+                        Local Crew Company
+                        <a href="#" class="hero__cta_button">Join as a Company</a>
+                    </div>
+                </div>
+            </section>
+            <!--/.Hero Wrapper-->
+
+            <!-- Discription -->
+            <div class="disc">
+                <p class="disc__text">
+                    This portal allows all interested event professionals to register and apply for jobs with Taiwiz.
+                    <br />
+                    To view the qualifications and skills we are looking for, please <a href="#">Click HERE!</a>.
+                    <br />
+                    For more information visit our <a href="#">FAQ section</a>.
+                </p>
+            </div>
+            <!-- /.Discription -->
+
+            <!--Section: about-->
+            <section class="about">
+
+                <!--First row-->
+                <div class="info">
+                    <div class="info__icon">
+                        <span>
+                            <i class="far fa-circle fa-2x"></i>
+                        </span>
+                        <span class="circle-title">
+                            Learn More
+                        </span>
+                    </div>
+                    <h2 class="info__title">
+
+                        About <div class="info__title--underline"> Taiwiz Group</div>
+                    </h2>
+                </div>
+                <!-- /First row-->
+
+                <!-- Second row  -->
+                <div class="about-card">
+                    <div class="about-card__text">
+                        <div class="about-card__title">
+                            This Portal allows all intrested event professionals to register and apply for jobs with
+                            Taiwiz
+                        </div>
+                        <p class="about-card__disc">
+                            Doing and internship or by further education as well as working as a stagehand can gain some
+                            of the
+                            skills. Other skills can only be gainded by being a trained specialist. for example in the
+                            area of
+                            rigging. You would need to get formal education or work experience, in combination with a
+                            number of
+                            courses, to get the expertise. if someone wants to work as a rigger for us. We would check
+                            all
+                            documents
+                            and see how the person performs on practical assignments.
+                        </p>
+                    </div>
+                    <div class="about-card__img">
+                        <img src="img/taiwio_on_logo.png" alt="Taiwio with Logo">
+                    </div>
+
+                </div>
+                <!--/Second row-->
+            </section>
+            <!--Section: about-->
+
+            <section class="whyus">
+                <div class="whyus__bg">
+                    <!-- <img src="img/taiwo_hodie.png" alt=""> -->
+                </div>
+                <div class="info whyus__item--0">
+                    <div class="info__icon">
+                        <span>
+                            <i class="far fa-circle fa-2x"></i>
+                        </span>
+                        <span class="circle-title">
+                            Services That we offer
+                        </span>
+                    </div>
+                    <h2 class="info__title">
+                        Why <br> <span>Join Us</span>
+                    </h2>
+                </div>
+
+                <div class="whyus__item whyus__item--item1">
+                    <img src="img/triangle_circle.png" alt="Traingle with circle inside">
+                    <h3>This Portal allows all intrested event professionals to register</h3>
+                    <p>
+                        Doing and internship or by further education as well as working as a
+                    </p>
+                    <a whyus__item_link href="#">Learn More <span class="circle-arrow"><i
+                                class="far fa-arrow-alt-circle-right fa-2x"></i></span></a>
+
+
+                </div>
+
+                <div class="whyus__item whyus__item--item2">
+                    <img src="img/triangle_circle.png" alt="Traingle with circle inside">
+                    <h3>This Portal allows all intrested event professionals to register</h3>
+                    <p>
+                        Doing and internship or by further education as well as working as a
+                    </p>
+                    <a href="#">Learn More <span class="circle-arrow"><i
+                                class="far fa-arrow-alt-circle-right fa-2x"></i></span></a>
+                </div>
+
+                <div class="whyus__item whyus__item--item3">
+                    <img src="img/triangle_circle.png" alt="Traingle with circle inside">
+                    <h3>This Portal allows all intrested event professionals to register</h3>
+                    <p>
+                        Doing and internship or by further education as well as working as a
+                    </p>
+                    <a href="#">Learn More <span class="circle-arrow"><i
+                                class="far fa-arrow-alt-circle-right fa-2x"></i></span></a>
+                </div>
+            </section>
+
+            <section class="nyh">
+                <hr class="zig">
+                <hr class="zag">
+                <div class="nyh__wrapper">
+                    <div class="nyh__item nyh__item--dark">
+                        <div class="info">
+                            <div class="info__icon">
+                                <span class="info__circle">
+                                    <i class="far fa-circle fa-2x"></i>
+                                </span>
+                                <span class="circle-title">
+                                    Know your Heros
+                                </span>
+                            </div>
+                            <h2 class="info__title">
+
+                                Meet <div class="info__title--underline"> the team</div>
+                            </h2>
+                            <br>
+                            <h1>Want to Join Us?</h1>
+                            <br>
+                            <a href="#" class="info__cta">Join the Team</a>
+                        </div>
+
+                    </div>
+
+                    <div class="nyh__item">
+                        <a href="#">
+                            <img src="img/taiwio_on_logo.png" alt="Taiwo Gravity on Logo">
+                            <h3>Taiwiz | The Beast</h3>
+                            <p>Doing an internship or by further education as well as working as a</p>
+                        </a>
+
+                    </div>
+
+                    <div class="nyh__item">
+                        <a href="#">
+                            <img src="img/kelly_sharpie.png" alt="Kelly on Logo">
+                            <h3>Kelly | Sharpie</h3>
+                            <p>Doing an internship or by further education as well as working as a</p>
+                        </a>
+
+                    </div>
+
+                    <div class="nyh__item">
+                        <a href="#">
+                            <img src="img/gorilla_logo.png" alt="Gorilla on Logo withPay Me">
+                            <h3>John | Gorilla Grodd</h3>
+                            <p>Doing an internship or by further education as well as working as a</p>
+                        </a>
+
+                    </div>
+
+                    <div class="nyh__item">
+                        <a href="#">
+                            <img src="img/wolf.png" alt="Gorilla on Logo with Pay Me">
+                            <h3>Frank | Anubis</h3>
+                            <p>Doing an internship or by further education as well as working as a</p>
+                        </a>
+
+                    </div>
+
+                    <div class="nyh__item">
+                        <a href="#">
+                            <img src="img/janice.png" alt="Janice queen on gravity">
+                            <h3>Janice | The Queen</h3>
+                            <p>Doing an internship or by further education as well as working as a</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__img_wrapper">
+                <img src="img/logo_white_footer.png" alt="Taiwiz White Logo" class="footer__img">
+            </div>
+            <div class="footer__text">
+                Copyright © <br />
+                2020 TAIWIZ LTD <br />
+                All Rights Reserved
+            </div>
+
+            <hr class="zig">
+            <hr class="zag">
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

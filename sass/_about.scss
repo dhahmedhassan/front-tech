@@ -1,0 +1,48 @@
+.about {
+    margin-bottom: 5rem;
+    @include circle-learn-more();
+
+    .info {
+        margin-left: 1.3em;
+    }
+
+    .about-card {
+        background: white;
+        display: flex;
+        max-width: 80%;
+        margin: 1rem auto;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+        &__text {
+            padding: 1.5em;
+        }
+
+        &__title {
+            text-transform: capitalize;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        &__img img {
+            max-width: 20rem;
+            // max-height: 20rem;
+        }
+    }
+
+    @include media("<=tablet") {
+
+        // background-color: blue;
+        .about-card {
+            flex-direction: column;
+            justify-content: stretch;
+
+            &__img img {
+                max-width: 100%;
+            }
+        }
+
+        .info__icon {
+            margin-left: 1em;
+        }
+    }
+}

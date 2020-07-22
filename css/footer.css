@@ -1,0 +1,14 @@
+.footer {
+  background: #171647;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer__img {
+  max-height: 80px;
+}
+
+.footer__text {
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */

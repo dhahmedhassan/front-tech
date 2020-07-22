@@ -1,0 +1,73 @@
+.nyh {
+    &__wrapper {
+        display: grid;
+        grid-gap: 1em;
+        text-align: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        max-width: 960px;
+        margin: 1em auto;
+    }
+
+    &__item {
+        background: white;
+        line-height: 2em;
+        padding: 1.4em 1em;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        img {
+            max-height: 260px;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                background-color: #555;
+            }
+
+            &:active {
+                background-color: black;
+            }
+
+            &:visited {
+                background-color: #ccc;
+            }
+        }
+
+        &--dark {
+            background: $primary;
+            color: white;
+            padding-top: 3rem;
+
+            .info__circle {
+                color: #f44871;
+            }
+
+            .info__icon .circle-title {
+                left: -1.4em;
+                position: relative;
+            }
+
+            .info__title {
+                text-align: left;
+                margin-left: 100px;
+                text-transform: uppercase;
+
+                &--underline {
+                    text-decoration: underline;
+                    text-decoration-thickness: 10px;
+                }
+            }
+
+            .info__cta {
+                @include peach();
+                padding: 0.6em;
+            }
+        }
+    }
+}

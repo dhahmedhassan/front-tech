@@ -1,0 +1,65 @@
+.whyus {
+    background: url("../img/taiwo_hodie.png");
+    background-repeat: no-repeat;
+    background-size: 46em;
+    background-position-x: -8em;
+    display: grid;
+    grid-template-areas:
+        ". item0 item1"
+        ". item2 item3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    margin-bottom: 5em;
+
+    // TODO: Add arrow inside a circle for Learn More
+
+    @include circle-learn-more();
+
+    &__item {
+        padding: 2.4em 1em;
+        background: white;
+        text-align: center;
+
+        &>* {
+            margin-bottom: 1em;
+        }
+
+        &>a {
+            text-align: right;
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            @include zoomOnHover();
+        }
+
+        &--item0 {
+            grid-area: item0;
+        }
+
+        &--item1 {
+            grid-area: item1;
+        }
+
+        &--item2 {
+            grid-area: item2;
+        }
+
+        &--item3 {
+            grid-area: item3;
+        }
+    }
+
+    @include media("<=tablet") {
+        // grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0.5em auto;
+
+        .info__title {
+            color: #f44871;
+        }
+    }
+}

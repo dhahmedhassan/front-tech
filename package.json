@@ -1,0 +1,15 @@
+{
+  "name": "front-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "include-media": "^1.4.9",
+    "normalize.css": "^8.0.1"
+  }
+}

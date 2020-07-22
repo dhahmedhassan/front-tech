@@ -1,0 +1,15 @@
+
+.footer {
+    background: #171647;
+    padding: 1em;
+    text-align: center;
+  
+    &__img {
+      max-height: 80px;
+    }
+  
+    &__text {
+      color: white;
+    }
+  }
+  
