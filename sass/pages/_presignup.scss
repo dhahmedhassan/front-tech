@@ -1,0 +1,44 @@
+.presignup {
+    text-align: center;
+    
+    &__container {
+        background: #fff;
+        max-width: 720px;
+        margin: auto;
+        border-top: .7em solid $secondary;
+        padding-bottom: 1em;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin: 1em;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        @include media("<=tablet") {
+            background: blue;
+            flex-direction: column;
+        }
+
+    }
+    &__item {
+        margin: 1em;
+        h3 {
+            font-weight: 700;
+            margin-bottom: 1em;
+        }               
+    }
+    &__cta {
+        @include peach();
+        padding: 1em;
+        text-decoration: none;
+    }
+    
+}
+
