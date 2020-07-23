@@ -1,0 +1,43 @@
+.signupPerson {
+    text-align: center;
+    
+    &__container {
+        background: #fff;
+        max-width: 720px;
+        margin: auto;
+        border-top: 1em solid $secondary;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin: 1em;
+    }
+
+    .formPerson__wrapper {
+        display: grid;
+        margin: 0 3em;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        margin-bottom: 1em;
+
+        @include media("<=tablet") {
+            margin: 1em;
+        }
+    }
+
+    &__input {
+        background: $input-field;
+        line-height: 2em;
+        border: none;
+    }
+
+    &__submit {
+        @include peach();
+        padding: 5px 1.3em;
+        margin-bottom: 1em;
+    }
+}
+
