@@ -43,16 +43,16 @@
     height: 55px;
     background: transparent;
     padding: 0 7px 0 43px;
+    input[type="text"], input[type="password"] { 
+        display: block; 
+        background:$bg-sec; 
+        text-align:justify;  
+        font-size: 150%; 
+        margin-bottom: 1em;
+        padding-left: 1em;
+    } 
 }
 
-input[type="text"], input[type="password"] { 
-    display: block; 
-    background:$bg-sec; 
-    text-align:justify;  
-    font-size: 150%; 
-    margin-bottom: 1em;
-    padding-left: 1em;
-} 
 
 
 .login__forget-passwd {
