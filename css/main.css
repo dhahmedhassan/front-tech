@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url(/opt/lampp/htdocs/front-tech/node_modules/@fortawesome/fontawesome-free/css/all.css);
 *,
 *:before,
 *:after,
@@ -695,13 +696,14 @@ a:hover {
   margin-top: 1em;
 }
 
-.login__inputs {
-  height: 55px;
-  background: transparent;
-  padding: 0 7px 0 43px;
+.login__input {
+  background: #f4f4fb;
+  line-height: 2em;
+  border: none;
+  margin-bottom: 1em;
 }
 
-.login__inputs input[type="text"], .login__inputs input[type="password"] {
+.login__input input[type="text"], .login__input input[type="password"] {
   display: block;
   background: #e8e8f3;
   text-align: justify;

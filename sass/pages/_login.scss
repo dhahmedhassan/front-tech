@@ -39,10 +39,11 @@
     margin-top: 1em;
 }
 
-.login__inputs {
-    height: 55px;
-    background: transparent;
-    padding: 0 7px 0 43px;
+.login__input {
+    background: $input-field;
+    line-height: 2em;
+    border: none;
+    margin-bottom: 1em;
     input[type="text"], input[type="password"] { 
         display: block; 
         background:$bg-sec; 
