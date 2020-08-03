@@ -1,0 +1,198 @@
+// TODO: header links, media
+.job_submit {
+    margin: 2em;
+    max-width: 100%;
+}
+
+.form__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.job_submit_form {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "job_title job_title job_title job_title"
+        "job_type job_category freelancer_level experience"
+        "gender qualification vacancy industry"
+        "work_type budget job_duration job_location"
+        "job_description job_description attachment attachment"
+        "education education must_have must_have"
+        "agree agree agree agree";
+        grid-gap: 1em;
+
+        input[type="text"], input[type="file"], select, textarea { 
+            background: #fff;
+            border: none;
+
+            &:focus {
+                border: 1px solid $primary;
+            }
+        } 
+
+        /* Media */
+        @include media("<=950px") {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                    "job_title job_title"
+                    "job_type job_category" 
+                    "freelancer_level experience"
+                    "gender qualification" 
+                    "vacancy industry"
+                    "work_type budget" 
+                    "job_duration job_location"
+                    "job_description job_description" 
+                    "attachment attachment"
+                    "education education" 
+                    "must_have must_have"
+                    "agree agree";
+        }
+
+        @include media("<=500px") {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+    }
+
+    .job_submit__item {
+        &--job_title {
+            grid-area: job_title;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_type {
+            grid-area: job_type;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_category {
+            grid-area: job_category;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--freelancer_level {
+            grid-area: freelancer_level;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--experience {
+            grid-area: experience;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--gender {
+            grid-area: gender;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--gender {
+            grid-area: gender;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--qualification {
+            grid-area: qualification;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--vacancy {
+            grid-area: vacancy;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--work_type {
+            grid-area: work_type;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_duration {
+            grid-area: job_duration;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_location {
+            grid-area: job_location;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--freelancer_level {
+            grid-area: freelancer_level;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--experience {
+            grid-area: experience;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--industry {
+            grid-area: industry;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--budget {
+            grid-area: budget;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_description {
+            grid-area: job_description;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--job_description {
+            grid-area: job_description;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--attachment {
+            grid-area: attachment;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--education {
+            grid-area: education;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--must_have {
+            grid-area: must_have;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--agree {
+            grid-area: agree;
+        }
+    }
+}
+
+.job_submit__button {
+    @include peach();
+    padding: .3em 1em;
+}

@@ -80,6 +80,7 @@ ul {
 header a {
   color: white;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -957,6 +958,361 @@ a:hover {
 }
 
 .presignup__cta:hover {
+  background: linear-gradient(225deg, #F44072 0%, #F58564 100%);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.job_submit {
+  margin: 2em;
+  max-width: 100%;
+}
+
+.form__title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.job_submit_form__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "job_title job_title job_title job_title" "job_type job_category freelancer_level experience" "gender qualification vacancy industry" "work_type budget job_duration job_location" "job_description job_description attachment attachment" "education education must_have must_have" "agree agree agree agree";
+  grid-gap: 1em;
+  /* Media */
+}
+
+.job_submit_form__wrapper input[type="text"], .job_submit_form__wrapper input[type="file"], .job_submit_form__wrapper select, .job_submit_form__wrapper textarea {
+  background: #fff;
+  border: none;
+}
+
+.job_submit_form__wrapper input[type="text"]:focus, .job_submit_form__wrapper input[type="file"]:focus, .job_submit_form__wrapper select:focus, .job_submit_form__wrapper textarea:focus {
+  border: 1px solid #171647;
+}
+
+@media (max-width: 950px) {
+  .job_submit_form__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "job_title job_title" "job_type job_category"  "freelancer_level experience" "gender qualification"  "vacancy industry" "work_type budget"  "job_duration job_location" "job_description job_description"  "attachment attachment" "education education"  "must_have must_have" "agree agree";
+  }
+}
+
+@media (max-width: 500px) {
+  .job_submit_form__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.job_submit_form .job_submit__item--job_title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: job_title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_type {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job_type;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_category {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job_category;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--freelancer_level {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: freelancer_level;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--experience {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: experience;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--gender {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gender;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--gender {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: gender;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--qualification {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: qualification;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--vacancy {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: vacancy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--work_type {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: work_type;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_duration {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: job_duration;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_location {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: job_location;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--freelancer_level {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: freelancer_level;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--experience {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: experience;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--industry {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: industry;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--budget {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: budget;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_description {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: job_description;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--job_description {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: job_description;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--attachment {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: attachment;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--education {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: education;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--must_have {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: must_have;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job_submit_form .job_submit__item--agree {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: agree;
+}
+
+.job_submit__button {
+  background: #f58464;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F58564), to(#F44072));
+  background: linear-gradient(0deg, #F58564 0%, #F44072 100%);
+  font-size: 1em;
+  font-weight: bolder;
+  border-radius: 500px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .3em 1em;
+}
+
+.job_submit__button:hover {
   background: linear-gradient(225deg, #F44072 0%, #F58564 100%);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);

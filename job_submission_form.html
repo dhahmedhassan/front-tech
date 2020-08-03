@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwiz Crew Portal - job_submission_form</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header  -->
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" width="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Workstreams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transactions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">freelancers</a>
+                        </li>
+                    </ul>
+                    <form class=" header__btn_container">
+                        <div class="button header__button"><a href="#">Log In</a></div>
+                        <div class="button secondary header__button"><a href="#">Sign Up</a></div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- /.Header  -->
+
+        <main class="main">
+            <!-- job_submission_form  -->
+            <div class="job_submit">
+                <h1 class="form__title form__title--underline">
+                    Job Submission Form
+                </h1>
+                <form action="" method="POST" class="job_submit_form">
+                    <div class="job_submit_form__wrapper">
+
+                        <div class="job_submit__item job_submit__item--job_title">
+                            <label for="job_submit__job_title" class="job_submission_form__label">Job Title</label>
+                            <input type="text" name="job_submit__job_title" id="job_submit__job_title" class="job_submit__job_title">
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--job_type">
+                            <label for="job_submit__type">Job type</label>
+                            <select name="job_submit__type" id="job_submit__type">
+                                <option value="" disabled selected hidden>Select a job type</option>
+                                <option value="type1">job type 1</option>
+                                <option value="type2">job type B</option>
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--job_category">
+                            <label for="job_submit__category">Job category</label>
+                            <select name="job_submit__category" id="job_submit__category">
+                                <option value="" disabled selected hidden>Select a job category</option>
+                                <option value="category1">job category 1</option>
+                                <option value="category2">job category B</option>
+                                
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--freelancer_level">
+                            <label for="job_submit__level">Freelancer level</label>
+                            <select name="job_submit__level" id="job_submit__level">
+                                <option value="" disabled selected hidden>Select a level</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Expert">Expert</option>                                
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--experience">
+                            <label for="job_submit__experience" class="job_submission_form__label">experience</label>
+                            <input type="text" name="job_submit__experience" id="job_submit__experience" placeholder="2 Years" class="job_submit__experience">
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--gender">
+                            <label for="job_submit__gender">Gender</label>
+                            <select name="job_submit__gender" id="job_submit__gender">
+                                <option value="" disabled selected hidden>Select a gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--qualification">
+                            <label for="job_submit__qualification">Qualifications</label>
+                            <select name="job_submit__qualification" id="job_submit__qualification">
+                                <option value="" disabled selected hidden>Select a qualification</option>
+                                <option value="">qualification1</option>
+                                <option value="">qualification2</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--vacancy">
+                            <label for="job_submit__vacancy">Vacancy</label>
+                            <select name="job_submit__vacancy" id="job_submit__vacancy">
+                                <option value="" disabled selected hidden>Select a vacancy</option>
+                                <option value="">vacancy1</option>
+                                <option value="">vacancy2</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--industry">
+                            <label for="job_submit__industry" class="job_submission_form__label">Industry</label>
+                            <input type="text" name="job_submit__industry" id="job_submit__industry" class="job_submit__industry">
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--work_type">
+                            <label for="job_submit__work_type">Work Type</label>
+                            <select name="job_submit__work_type" id="job_submit__work_type">
+                                <option value="" disabled selected hidden>Select a Work Type</option>
+                                <option value="">work_type1</option>
+                                <option value="">work_type2</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--budget">
+                            <label for="job_submit__budget" class="job_submission_form__label">Budget</label>
+                            <input type="text" name="job_submit__budget" id="job_submit__budget" class="job_submit__budget">
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--job_duration">
+                            <label for="job_submit__duration">Job Duration</label>
+                            <select name="job_submit__duration" id="job_submit__duration">
+                                <option value="" disabled selected hidden>Select a Timeframe</option>
+                                <option value="">duration1</option>
+                                <option value="">duration2</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--job_location">
+                            <label for="job_submit__location">Job location</label>
+                            <select name="job_submit__location" id="job_submit__location">
+                                <option value="" disabled selected hidden>Select a Job location</option>
+                                <option value="">location1</option>
+                                <option value="">location2</option>                              
+                            </select>
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--job_description">
+                            <label for="job_submit__job_description">Job Description</label>
+                            <textarea name="job_submit__job_description" id="job_submit__job_description"></textarea> 
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--attachment">
+                            <label for="job_submit__attachment">Attachments</label>
+                            <input type="file" name="job_submit__attachment" id="job_submit__attachment" class="job_submit_attachment">
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--education">
+                            <label for="job_submit__education">Education & Experience</label>
+                            <textarea name="job_submit__education" id="job_submit__education"></textarea> 
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--must_have">
+                            <label for="job_submit__must_have">Must Have</label>
+                            <textarea name="job_submit__must_have" id="job_submit__must_have"></textarea> 
+                        </div>
+                        
+                        <div class="job_submit__item job_submit__item--agree">
+                            <input type="checkbox" name="job_submit__terms" id="job_submit__terms" class="job_submit__terms">
+                            <label for="job_submit__terms" class="job_submit__terms">I agree to <a href="/terms">Terms & Policy</a> </label>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="job_submit__button">Post This job</button>
+                    
+                </form>
+            </div>
+            
+            
+            <!-- /.job_submission_form  -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer__img_wrapper">
+                <img src="img/logo_white_footer.png" alt="Taiwiz White Logo" class="footer__img">
+            </div>
+            <div class="footer__text">
+                Copyright © <br />
+                2020 TAIWIZ LTD <br />
+                All Rights Reserved
+            </div>
+
+            <hr class="zig">
+            <hr class="zag">
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
