@@ -57,8 +57,9 @@
         display: grid;
         grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 0.4em;
-
+        
         .listing_item {
+            border-bottom: 1px $primary solid;
             display: flex;
             align-items: center;
             justify-content: space-around;
