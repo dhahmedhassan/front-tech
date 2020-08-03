@@ -272,6 +272,16 @@ a:hover {
   line-height: 3em;
 }
 
+.header__button--user {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.header__button--user a {
+  color: #f44571;
+}
+
 .footer {
   background: #171647;
   padding: 1em;

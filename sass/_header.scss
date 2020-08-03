@@ -166,4 +166,11 @@ a:hover {
 .header__button {
   margin-right: 1em;
   line-height: 3em;
+
+  &--user {
+    order: 2;
+    a {
+      color: $secondary;
+    }
+  }
 }
