@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwiz Crew Portal - job_submission_form</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header  -->
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="" width="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Workstreams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Transactions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">freelancers</a>
+                        </li>
+                    </ul>
+                    <div class=" header__btn_container">
+                        <div class="button header__button"><a href="#"><i class="fas fa-bell"></i></a></div>
+
+                        <div class="button secondary header__button"><a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+
+                        <div class="header__button--user"><a href="#"><i class="far fa-user-circle fa-3x"></i></a></div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- /.Header  -->
+
+        <main class="main">
+            <!-- dashboard  -->
+            <section class="dashboard">
+
+                <div class="dashboard__wrapper">
+
+                    <div class="dashboard__title_wrapper">
+                        <div class="dashboard__title">
+                            <div>Hello</div>
+                            <h1 class="dashboard__title--underline">
+                                Henry Hayes
+                            </h1>
+                        </div>
+
+                        <button class="dashboard__button">
+                            Post a Job Event
+                        </button>
+                    </div>
+
+                    <div class="dashboard__stats_wrapper">
+                        <div class="dashboard__stats_item">
+                            <h1>20</h1>
+                            <span>Open Jobs & Events</span>
+                        </div>
+
+                        <div class="dashboard__stats_item">
+                            <h1>140</h1>
+                            <span>Application submit</span>
+                        </div>
+
+                        <div class="dashboard__stats_item">
+                            <h1>12</h1>
+                            <span>Active workstreams</span>
+                        </div>
+
+                        <div class="dashboard__stats_item">
+                            <h1>40</h1>
+                            <span>Candidates</span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__workstream">
+                        <div class="dashboard__workstream_item">
+                            <span class="dashboard__workstream_heading">
+                                Active Workstreams
+                            </span>
+                        </div>
+
+                        <div class="dashboard__workstream_item">
+                            <div>
+                                <i class="fa fa-user-circle fa-4x"></i>
+                                <span class="dashboard__workstream_client">
+                                    Micheal Shannah
+                                </span>
+                                <div class="dashboard__workstream_msg">
+                                    Great. If you need any further clarification let me know
+                                </div>
+                            </div>
+                            
+                            <span class="dashboard__workstream_date">
+                                2 Minutes ago
+                            </span>
+                        </div>
+
+                        <div class="dashboard__workstream_item dashboard__workstream_item_footer">
+                            <a href="" class="dashboard__workstream_seemore">
+                                see all messages
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- /.dashboard  -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer__img_wrapper">
+                <img src="img/logo_white_footer.png" alt="Taiwiz White Logo" class="footer__img">
+            </div>
+            <div class="footer__text">
+                Copyright © <br />
+                2020 TAIWIZ LTD <br />
+                All Rights Reserved
+            </div>
+
+            <hr class="zig">
+            <hr class="zag">
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

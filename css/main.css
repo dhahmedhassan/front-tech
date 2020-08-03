@@ -1423,6 +1423,7 @@ a:hover {
 }
 
 .your_jobs__listing_wrapper .listing_item {
+  border-bottom: 1px #171647 solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,5 +1485,111 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.dashboard__wrapper {
+  max-width: 960px;
+  margin: auto;
+  padding: 1em;
+}
+
+.dashboard__title_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard__title h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.dashboard__title--underline {
+  -webkit-text-decoration: underline solid #f44571 5px;
+          text-decoration: underline solid #f44571 5px;
+}
+
+.dashboard__button {
+  background: #f58464;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F58564), to(#F44072));
+  background: linear-gradient(0deg, #F58564 0%, #F44072 100%);
+  font-size: 1em;
+  font-weight: bolder;
+  border-radius: 500px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.3em 1em;
+}
+
+.dashboard__button:hover {
+  background: linear-gradient(225deg, #F44072 0%, #F58564 100%);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dashboard__stats_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 1em;
+  margin: auto 0;
+}
+
+.dashboard__stats_item {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 8rem;
+}
+
+.dashboard__stats_item h1 {
+  color: #f44571;
+  font-weight: bolder;
+}
+
+.dashboard__workstream {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  background: white;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.dashboard__workstream_item {
+  border-bottom: 1px #171647 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
