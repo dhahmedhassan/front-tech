@@ -972,6 +972,12 @@ a:hover {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.form__title--underline {
+  -webkit-text-decoration: underline solid #f44571 5px;
+          text-decoration: underline solid #f44571 5px;
 }
 
 .job_submit_form__wrapper {
