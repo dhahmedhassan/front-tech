@@ -171,6 +171,10 @@ a:hover {
     order: 2;
     a {
       color: $secondary;
+
+      &:hover {
+        color: darken($secondary, 1.4);
+      }
     }
   }
 }

@@ -282,6 +282,10 @@ a:hover {
   color: #f44571;
 }
 
+.header__button--user a:hover {
+  color: #f43e6c;
+}
+
 .footer {
   background: #171647;
   padding: 1em;
