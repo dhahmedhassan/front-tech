@@ -1585,11 +1585,26 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f44571;
+}
+
+.dashboard__workstream_client {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.dashboard__workstream_msg {
+  margin-left: 1em;
+}
+
+.dashboard__workstream_date {
+  margin-left: auto;
+}
+
+.dashboard__workstream_seemore {
+  margin-left: auto;
 }
 /*# sourceMappingURL=main.css.map */

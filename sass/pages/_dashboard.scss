@@ -66,8 +66,23 @@
         &_item {
             border-bottom: 1px $primary solid;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             align-items: center;
+            color: $secondary;
+        }
+        &_client {
+            font-weight: bold;
+            margin-left: 1em;
+        }
+
+        &_msg {
+            margin-left: 1em;
+        }
+        &_date {
+            margin-left: auto;
+        }
+        &_seemore {
+            margin-left: auto;
         }
     }
 }
