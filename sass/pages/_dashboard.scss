@@ -54,6 +54,15 @@
         }
     }
 
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+
+        @include media("<=tablet") {
+            grid-template-columns: 1fr;
+        }
+    }
     // Workstream Card 
     &__workstream {
         display: grid;
@@ -64,11 +73,18 @@
         padding: 1em;
 
         &_item {
+            padding-bottom: 1em;
             border-bottom: 1px $primary solid;
             display: flex;
-            // justify-content: space-between;
             align-items: center;
             color: $secondary;
+            &:link {
+                text-decoration: none;
+            }
+
+            &_footer {
+                border-bottom: none;
+            }
         }
         &_client {
             font-weight: bold;
@@ -80,9 +96,54 @@
         }
         &_date {
             margin-left: auto;
+            padding-left: .5em;
         }
         &_seemore {
             margin-left: auto;
         }
+    }
+
+    // Workstream Card 
+    &__timesheet {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        background: white;
+        margin: 1em 0;
+        padding: 1em;
+
+        &_item {
+            padding-bottom: 1em;
+            border-bottom: 1px $primary solid;
+            display: flex;
+            align-items: center;
+            color: $secondary;
+            &:link {
+                text-decoration: none;
+            }
+
+            &_footer {
+                border-bottom: none;
+            }
+        }
+        &_client {
+            font-weight: bold;
+            margin-left: 1em;
+        }
+
+        &_msg {
+            margin-left: 1em;
+        }
+        &_date {
+            margin-left: auto;
+            padding-left: .5em;
+        }
+        &_seemore {
+            margin-left: auto;
+        }
+    }
+
+    .your_jobs__listing {
+        grid-column: 1/-1;
     }
 }

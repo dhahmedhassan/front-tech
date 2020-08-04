@@ -1569,6 +1569,21 @@ a:hover {
   font-weight: bolder;
 }
 
+.dashboard__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+@media (max-width: 768px) {
+  .dashboard__cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .dashboard__workstream {
   display: -ms-grid;
   display: grid;
@@ -1581,6 +1596,7 @@ a:hover {
 }
 
 .dashboard__workstream_item {
+  padding-bottom: 1em;
   border-bottom: 1px #171647 solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1589,6 +1605,14 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   color: #f44571;
+}
+
+.dashboard__workstream_item:link {
+  text-decoration: none;
+}
+
+.dashboard__workstream_item_footer {
+  border-bottom: none;
 }
 
 .dashboard__workstream_client {
@@ -1602,9 +1626,63 @@ a:hover {
 
 .dashboard__workstream_date {
   margin-left: auto;
+  padding-left: .5em;
 }
 
 .dashboard__workstream_seemore {
   margin-left: auto;
+}
+
+.dashboard__timesheet {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  background: white;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.dashboard__timesheet_item {
+  padding-bottom: 1em;
+  border-bottom: 1px #171647 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f44571;
+}
+
+.dashboard__timesheet_item:link {
+  text-decoration: none;
+}
+
+.dashboard__timesheet_item_footer {
+  border-bottom: none;
+}
+
+.dashboard__timesheet_client {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.dashboard__timesheet_msg {
+  margin-left: 1em;
+}
+
+.dashboard__timesheet_date {
+  margin-left: auto;
+  padding-left: .5em;
+}
+
+.dashboard__timesheet_seemore {
+  margin-left: auto;
+}
+
+.dashboard .your_jobs__listing {
+  grid-column: 1/-1;
 }
 /*# sourceMappingURL=main.css.map */
