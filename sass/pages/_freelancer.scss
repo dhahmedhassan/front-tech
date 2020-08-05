@@ -1,0 +1,106 @@
+.freelancer {
+    // background: blue;
+    
+    &__wrapper {
+        max-width: 960px;
+        margin: auto;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    &__item {
+        background: white;
+        border-bottom: 1px solid $bg-sec;
+
+        &_button {
+            @include peach();
+            font-size: 1.1em;
+            line-height: 2em;
+            border: none;
+            padding: 0 1em;
+        }
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .freelancer__heading {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1em;
+            
+                &--underline {
+                    text-decoration: underline solid $secondary 5px;
+                }
+            }
+            
+        }
+
+        &_search {
+            .freelancer__search {
+                display: flex;
+                background: white;
+                input {
+                    width: 100%;
+                    border: none;
+                    font-size: 1.3em;
+                    font-style: italic;
+                }
+    
+                button {
+                    border: none;
+                    background: white;
+                    font-weight: bold;
+                    padding: 0 1em;
+                    &:hover {
+                        background: darken($color: $bg-sec, $amount: 2);
+                    }
+                }
+            }
+        }
+
+        &_jobs {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-gap: 1em;
+
+            .freelancer__jobs_header {
+                display: flex;
+                align-items: center;
+
+                span {
+                    padding-left: 1em;
+                }
+            }
+            .freelancer__jobs_header_sort {
+                margin-left: auto;
+            }
+        }
+        &_title {
+            grid-column: 1/-1;
+
+        }
+        &_search {
+            grid-column: 1/-1;
+        }
+        &_jobs {
+            grid-column: 2/-1;
+        }
+    }
+
+    &__summary {
+        display: flex;
+
+        &_item {
+            padding: 1em;
+        }
+
+        &_name {
+            background: blue;
+            font-size: 1.5em;
+        }
+    }
+}
