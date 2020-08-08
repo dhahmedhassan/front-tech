@@ -7,6 +7,7 @@
         display: grid;
         grid-gap: 1em;
         grid-template-columns: 1fr 3fr;
+        padding: 1em;
     }
 
     &__item {
@@ -70,6 +71,15 @@
             .freelancer__jobs_header {
                 display: flex;
                 align-items: center;
+                font-weight: bold;
+                border-bottom: 1px solid $bg-sec;
+                font-size: 1.2em;
+                line-height: 2.2em;
+
+                &_sort  select{
+                    background: none;
+                    border: none;
+                }
 
                 span {
                     padding-left: 1em;
@@ -77,6 +87,42 @@
             }
             .freelancer__jobs_header_sort {
                 margin-left: auto;
+                background-color: none;
+            }
+        }
+
+        &_filter {
+            margin-bottom: auto;
+
+            &_header {
+                text-transform: uppercase;
+                font-weight: bold;
+                display: flex;
+                justify-content: space-between;
+                padding: .5em;
+
+                span:nth-last-child(1) {
+                    color: $secondary;
+                }
+            }
+
+            &_body {
+                padding: .5em;
+                border-bottom: 1px solid $bg-sec;
+                input {
+                    // vertical-align: sub;
+                    border: 1px solid #34495E;
+                    border-radius: 4px;
+                    outline: none;
+                    transition-duration: 0.3s;
+                    background-color: $primary;
+                    cursor: pointer;
+                }
+                label {
+                    display: block;
+                    text-transform: capitalize;
+                    
+                }
             }
         }
         &_title {
@@ -88,19 +134,61 @@
         }
         &_jobs {
             grid-column: 2/-1;
+
+            @include media('<=730px') {
+                grid-row: 3/4;
+                grid-column: 1/-1;
+            }
+        }
+
+        &_filter {
+            @include media("<=730px") {
+                display: none;
+            }
         }
     }
 
     &__summary {
         display: flex;
+        border-bottom: 1px solid $bg-sec;
+
+        &_item_title {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
         &_item {
             padding: 1em;
+            a {
+                color: $secondary;
+            }
         }
 
         &_name {
-            background: blue;
             font-size: 1.5em;
         }
+
+        &_location {
+            margin-bottom: 1em;
+        }
     }
+
+    &__tag {
+        border: 3px solid $secondary;
+        border-radius: 500px;
+        color: $secondary;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 0 1em;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__jobs_footer {
+        margin-left: auto;
+        padding: 1em;
+    }
+
+
 }
